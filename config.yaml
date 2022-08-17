@@ -1,0 +1,163 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: "hugo-profile"
+
+Paginate: 3
+disqusShortname: gurusabarish
+googleAnalytics: G-DWJJVE27WD
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Yi Liu"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/Logo.jfif"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  theme:
+    disableThemeToggle: false
+    # defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Yi Liu."
+    subtitle: "I am a big fun of nature and sports"
+    content: "I focus on environmental data analysis."
+    image: "/images/nature.JPG"
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/life.jpg"
+    content: |-
+      I just got my bachelor's degree in Hydrology and Water Resources Engineering and I am going to pursure a Ph.D. degree in Envionmental science. 
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - "Matlab"
+        - "R"
+        - "Python"
+        - "JavaScript"
+
+  # Education
+  education:
+    enable: true
+    # index: true
+    items:
+      - title: "Bachelor of Hydrology and Water Resources Engineering"
+        school:
+          name: "Southern University of Science and Technology"
+          url: "https://www.sustech.edu.cn/"
+        date: "2018.09 - 2022.07"
+        GPA: "3.7 out of 4.0"
+        content: |-
+            - First Class of the Merit Student Scholarship
+            - University Athletes of the Year
+      - title: "Exchange student at the Faculty of Applied Science and Engineering"
+        school:
+          name: "University of Toronto"
+          url: "https://www.utoronto.ca/"
+        date: "2022.09 - 2022.12"
+        GPA: "3.5 out of 4.0"
+        content: |-
+          I joined Bayesian Ecological & Environmental Statistics group and helped Shark Lab of California State University Long Beach to analyze shark data.
+         
+  footer:
+    # recentPosts: false
+    socialNetworks:
+      github: https://github.com/Liu22Yi
+      linkedin: https://www.linkedin.cn/incareer/in/%E6%80%A1-%E5%88%98-865b39184
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
